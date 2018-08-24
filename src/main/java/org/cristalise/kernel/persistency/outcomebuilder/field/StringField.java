@@ -374,6 +374,11 @@ public class StringField {
             if (!isOptional()) validators.put("required", JSONObject.NULL);
             if (hasValidator()) setNgDynamicFormsValidators(validators);;
 
+            if (contentType.hasFacet(Facet.PATTERN)) {
+                Facet pattern = contentType.getFacet(Facet.PATTERN);
+                validators.put(pattern.getName(), pattern.getValue());
+            }
+            
             //JSONObject errorMessages = new JSONObject();
             //errorMessages.put("required", name + " is required");
             //field.put("errorMessages", errorMessages);
