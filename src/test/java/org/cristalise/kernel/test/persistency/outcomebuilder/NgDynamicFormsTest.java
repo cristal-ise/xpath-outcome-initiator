@@ -79,9 +79,9 @@ public class NgDynamicFormsTest extends XMLUtils {
         assertJsonEquals(expected, actual);
     }
 
-    @Test @Ignore("Unimplemented: cannot generate json form for Table")
+    @Test //@Ignore("Unimplemented: cannot generate json form for Table")
     public void ngForm_Table() throws Exception {
-        OutcomeBuilder builder = new OutcomeBuilder("Table", new Schema("Table", 0, getXSD(dir, "Table")), false);
+        OutcomeBuilder builder = new OutcomeBuilder("Details", new Schema("Table", 0, getXSD(dir, "Table")), false);
 
         JSONArray actual   = builder.generateNgDynamicFormsJson();
 
