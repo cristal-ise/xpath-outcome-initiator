@@ -27,4 +27,11 @@
         <PickedQuantity>0</PickedQuantity>
         <MissingQuantity>6</MissingQuantity>
     </Table>
+    <Table>
+        <Product>BR1190</Product>
+        <RequiredQuantity>7</RequiredQuantity>
+        <PickedQuantity>1</PickedQuantity>
+        <MissingQuantity>7</MissingQuantity>
+        <ETA>2019-01-01</ETA>
+    </Table>
 </Details>
